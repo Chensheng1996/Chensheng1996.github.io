@@ -1,5 +1,5 @@
 # Site settings
-title: Another Blog
+title: iBlog
 url: "http://Chensheng1996.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 #baseurl: "/jekyll-theme-EasyBook" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
@@ -27,8 +27,8 @@ excerpt_separator: <!--more-->
 
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
-    About: /about/
     Category: /category/
+    About: /about/
 
 permalink: /archivers/:title
 plugins:
