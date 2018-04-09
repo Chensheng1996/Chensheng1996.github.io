@@ -27,8 +27,8 @@ excerpt_separator: <!--more-->
 
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
-    Category: /category/
-    About: /about/
+    目录: /category/
+    关于: /about/
 
 permalink: /archivers/:title
 plugins:
