@@ -1,7 +1,7 @@
 # Site settings
 title: iBlog
 url: "http://Chensheng1996.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-#baseurl: "/jekyll-theme-EasyBook" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 timezone: Asia/Shanghai
 description: >
   One or more sentences introducing this blog.
@@ -10,7 +10,7 @@ description: >
 email: 1791823620@qq.com
 author: Chensheng
 # avatar: "//www.gravatar.com/avatar/1791823620@qq.com_md5?d=mm&s=135"
-avatar: "//img/headImg.jpg"
+avatar: "//https://github.com/Chensheng1996/Chensheng1996.github.io/blob/master/img/headImg.jpg"
 profile: 用心、专注
 #twitter_username: twitter_username
 #github_username:  github_username
