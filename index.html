@@ -1,44 +1,6 @@
----
-layout: default
----
-
-<div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">文章</h1>
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-
-        <div class="post-excerpt">
-          {%   if post.content contains site.excerpt_separator or post.content != post.excerpt %}{{ post.excerpt }}
-          {%   else %}{{ post.content | lstrip | split: "" | first }}{% endif %}
-          <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
-          </p>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-  
-  <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
-  {% else %}
-    <span class="previous">PREV</span>
-  {% endif %}
-  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
-  {% else %}
-    <span class="next ">NEXT</span>
-  {% endif %}
-</div>
-
-</div>
+<!DOCTYPE html><html lang=en><head><title>Info</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>vue-demo</title><link rel=stylesheet href=/static/plugins/bootstrap/css/bootstrap.min.css><link rel=stylesheet href=/static/plugins/font-awesome/css/font-awesome.css><link id=theme-style rel=stylesheet href=/static/styles/styles.css><style>html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }</style><link href=/static/css/app.8d5ca3d730fd900acac166d3a7c5de79.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/plugins/jquery-1.12.4.min.js></script><script type=text/javascript src=/static/plugins/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=/static/plugins/back-to-top.js></script><script type=text/javascript src=/static/plugins/jquery-scrollTo/jquery.scrollTo.min.js></script><script type=text/javascript src=/static/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js></script><script type=text/javascript src=/static/plugins/imagesloaded.pkgd.min.js></script><script type=text/javascript src=/static/plugins/isotope.pkgd.min.js></script><script type=text/javascript src=/static/plugins/main.js></script><script type=text/javascript src=/static/plugins/style-switcher.js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.1cb601795fde7e9a5bee.js></script><script type=text/javascript src=/static/js/app.2b9d8795fc6fc765e9f3.js></script></body></html>
