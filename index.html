@@ -1,6 +1,34 @@
-<!DOCTYPE html><html lang=en><head><title>Info</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>vue-demo</title><link rel=stylesheet href=/static/plugins/bootstrap/css/bootstrap.min.css><link rel=stylesheet href=/static/plugins/font-awesome/css/font-awesome.css><link id=theme-style rel=stylesheet href=/static/styles/styles.css><style>html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-      }</style><link href=/static/css/app.8d5ca3d730fd900acac166d3a7c5de79.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/plugins/jquery-1.12.4.min.js></script><script type=text/javascript src=/static/plugins/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=/static/plugins/back-to-top.js></script><script type=text/javascript src=/static/plugins/jquery-scrollTo/jquery.scrollTo.min.js></script><script type=text/javascript src=/static/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js></script><script type=text/javascript src=/static/plugins/imagesloaded.pkgd.min.js></script><script type=text/javascript src=/static/plugins/isotope.pkgd.min.js></script><script type=text/javascript src=/static/plugins/main.js></script><script type=text/javascript src=/static/plugins/style-switcher.js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.1cb601795fde7e9a5bee.js></script><script type=text/javascript src=/static/js/app.2b9d8795fc6fc765e9f3.js></script></body></html>
+---
+layout: default
+---
+
+<div class="main-post-list hidden">
+
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
+      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
+      <div class="post-list__meta">        
+        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
+          <img src="/images/calendar.png" width="20px" /> 
+          {{ post.date | date: "%F"}}</time> 
+        <div class = "tag-img-icon">
+          <img src="/images/tag-icon.svg" width="20px" /> 
+        </div>
+        <a href="/tags">
+          <div class = "post-list-icon-mate">
+            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
+          </div>
+          <div class = "post-list-small-mate">
+          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
+          </div>
+      </div>
+      <hr class="post-list__divider" />
+    </li>
+    {% endfor %}
+  </ol>
+
+  {% include pagination.html %}
+
+</div>

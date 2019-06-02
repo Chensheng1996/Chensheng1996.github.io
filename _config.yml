@@ -1,58 +1,75 @@
-# Site settings
-title: iBlog
-url: "http://Chensheng1996.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
-timezone: Asia/Shanghai
-description: >
-  One or more sentences introducing this blog.
+# Basic
+title: 陈胜
+subtitle: 个人站
+description: 欢迎来到我的个人站~
+# 头像里面的标题
+avatarTitle: 云飞扬
+# 头像里面的描述
+avatarDesc: Java Web
+url: "http://baixin.io"
 
-# Your information
-email: 1791823620@qq.com
-author: Chensheng
-avatar: "//www.gravatar.com/avatar/1791823620@qq.com_md5?d=mm&s=135"
-profile: 用心、专注
-#twitter_username: twitter_username
-#github_username:  github_username
-profile_links:
-  Email: "mailto:1791823620@qq.com"
-  GitHub: "https://github.com/Chensheng1996/"
-  # You can add more profile links above, or edit _includes/sidebar.html 
+# Comment
+comment:
+    disqus: leopard
+    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    # uyan: 2143225  # 有言id,登录有言官网申请
 
-# Comment Service (Disqus or 多说)
-#  choose one and un-comment the line to active it
-#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+# Social
+social:
+    # weibo: 5366874726 
+    # github: leopardpan
+    # zhihu: panpanleopard
+    # juejin: xxx
+    # jianshu: 2ada30d8d0f7
+    # twitter: 
+    mail: 1791823620@qq.com
 
-excerpt_separator: <!--more-->
 
-header:
-  links:             # Links on the header. Link to in-site page with a slash as prefix
-    目录: /category/
-    关于: /about/
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: xxxx  
 
-permalink: /archivers/:title
-plugins:
- - jekyll-paginate
- - jekyll-gist
- - jemoji
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: xxxx  
+    host: auto  
 
-# Build settings
-paginate: 5
-paginate_path: "page:num"
 
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+
+permalink: /:year/:month/:title/
+# Format
 highlighter: rouge
-markdown: kramdown
 
-# https://jekyllrb.com/docs/configuration/#precedence
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+textColor: #FF0000
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  math_engine: mathjax
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+
