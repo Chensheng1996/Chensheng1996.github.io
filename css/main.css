@@ -1148,7 +1148,8 @@ input[type="tel"]:-ms-input-placeholder {
   }
   .content-wrapper__inner {
     margin-right: 0;
-    margin-left: 0; 
+    margin-left: 0;
+    width: 100%;
   }
 }
 
