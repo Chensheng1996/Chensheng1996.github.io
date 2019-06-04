@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript知识点梳理
 date: 2019-06-03 
-tags: Node.js   
+tags: 博客   
 ---
 
 　　经过各种找资料，踩过各种坑，终于使用 hexo 搭建个人博客初步完成了，域名目前用得时 github 的，我的 hexo 是 3.1.1 版本，hexo 不同的版本，很多配置都不一样。好吧，废话不多说了，开始吧。     
@@ -25,9 +25,4 @@ express -t ejs ProjectName // 使用ejs模板
 npm install // 安装，生成node_modules
 npm start // 端口号默认3000
 ```
-
-```javascript
-/**
- * 方式一：
- */
-```
+<!-- <hr style="height:1px;"> -->
