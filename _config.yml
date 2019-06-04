@@ -6,7 +6,7 @@ description: 欢迎来到我的个人站~
 avatarTitle: 云飞扬
 # 头像里面的描述
 avatarDesc: Java Web
-url: "http://baixin.io"
+# url: "http://baixin.io"
 
 # Comment
 comment:
@@ -17,10 +17,10 @@ comment:
 # Social
 social:
     # weibo: 5366874726 
-    # github: leopardpan
-    # zhihu: panpanleopard
-    # juejin: xxx
-    # jianshu: 2ada30d8d0f7
+    github: Chensheng1996
+    zhihu: panpanleopard
+    juejin: xxx
+    jianshu: 2ada30d8d0f7
     # twitter: 
     mail: 1791823620@qq.com
 
