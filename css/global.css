@@ -1,5 +1,9 @@
 /* 自定义样式 */
 
+p.bold {
+    font-weight: bold;
+}
+
 small.orange {
     color: orange;
     font-weight: bold;
@@ -8,4 +12,13 @@ small.orange {
 h2.title-cadetblue {
     border-left: 5px cadetblue solid;
     padding-left: 12px;
+}
+
+ul.custom-level {
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+.list-style-none {
+    list-style: none;
 }
